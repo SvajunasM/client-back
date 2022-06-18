@@ -1,4 +1,21 @@
 GET http://localhost:3000/
+Content-Type: application/json
+
+{
+    "user_id": 1
+}
+###
+POST http://localhost:3000/add
+Content-Type: application/json
+
+{
+    "name": "Svajunas",
+    "surname": "Matus",
+    "email": "svajunas@gmail.com",
+    "address": "Vilniaus g. 1",
+    "phone": "+322223322",
+    "user_id": 1
+}
 ###
 POST http://localhost:3000/register
 Content-Type: application/json
