@@ -8,4 +8,3 @@ authRoutes.post('/register', validateRegistration, authController);
 authRoutes.post('/login', validateLogin, loginController);
 
 module.exports = authRoutes;
-

@@ -35,8 +35,20 @@ async function putClientToDb(data) {
   }
 }
 
+async function removeClientFromDb(client_id) {
+  try {
+    const connection = await mysql.createConnection(dbConfig);
+    const sql = `DELETE FROM clients WHERE client_id = ? LIMIT 1`;
+    const [result] = await connection.execute(sql, [client_id]);
+    await connection.close();
+    return result;
+  } catch (error) {
+    return false;
+  }
+}
+
 module.exports = {
   getClientFromDb,
   putClientToDb,
+  removeClientFromDb,
 };
-
