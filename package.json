@@ -7,7 +7,8 @@
     "joi": "^17.6.0",
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
-    "mysql2": "^2.3.3"
+    "mysql2": "^2.3.3",
+    "readme-md-generator": "^1.0.0"
   },
   "name": "client-back",
   "version": "1.0.0",

@@ -2,7 +2,7 @@ const {
   getClientFromDb,
   putClientToDb,
   removeClientFromDb,
-} = require('../models/employeeModel');
+} = require('../models/clientModel');
 const { failResponse, successResponse } = require('../utils/dbHelpers');
 
 async function getClient(req, res) {
