@@ -118,5 +118,5 @@ module.exports = {
   validateRegistration,
   validateLogin,
   validateClient,
-
+  validateToken,
 };

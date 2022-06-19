@@ -1,10 +1,10 @@
 const express = require('express');
 const { getClient, writeClient } = require('../controllers/clientsController');
-const { validateClient } = require('../utils/helpers');
+const { validateClient, validateToken } = require('../utils/helpers');
 
 const clientRoutes = express.Router();
 
-clientRoutes.get('/', getClient);
-clientRoutes.post('/add', validateClient, writeClient);
+clientRoutes.get('/', validateToken, getClient);
+clientRoutes.post('/add', validateClient, validateToken, writeClient);
 
 module.exports = clientRoutes;
