@@ -9,7 +9,7 @@ POST http://localhost:3000/add
 Content-Type: application/json
 
 {
-    "name": "Svajunas",
+    "name": "Sv",
     "surname": "Matus",
     "email": "svajunas@gmail.com",
     "address": "Vilniaus g. 1",
