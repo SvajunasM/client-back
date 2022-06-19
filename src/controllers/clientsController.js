@@ -13,6 +13,9 @@ async function getClient(req, res) {
 
 async function writeClient(req, res) {
   const data = req.body;
+  data.user_id = req.userId;
+  console.log('data ===', data);
+  console.log('req.userId ===', req.userId);
   const client = await putClientToDb(data);
   if (!client) {
     failResponse(res);
