@@ -1,13 +1,14 @@
 ## Welcome to client-back
 
-## Install
+## How to install
 
-1. npm install
-2. copy .env example to .env and enter your values
+1. Download or clone the project
+2. Run "npm install" inside this project folder to install all dependencies
+3. Copy .env example to .env and enter your values
 
 ## Start server
 
-npm run start
+- Use "npm start" to start server.
 
 ## Dependencies
 
