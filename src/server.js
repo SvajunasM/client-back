@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
 const authRoutes = require('./routes/authRoutes');
-const employeeRoutes = require('./routes/employeeRoutes');
+const employeeRoutes = require('./routes/clientRoutes');
 
 const PORT = process.env.PORT || 8080;
 
