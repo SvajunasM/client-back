@@ -93,7 +93,6 @@ function verifyJwtToken(token) {
     const payload = jwt.verify(token, jwtSecret);
     return payload;
   } catch (error) {
-    console.log('error ===', error);
     return false;
   }
 }
