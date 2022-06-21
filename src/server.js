@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
 const authRoutes = require('./routes/authRoutes');
-const employeeRoutes = require('./routes/clientRoutes');
+const clientRoutes = require('./routes/clientRoutes');
 
 const PORT = process.env.PORT || 8080;
 
@@ -13,6 +13,6 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/', authRoutes);
-app.use('/', employeeRoutes);
+app.use('/', clientRoutes);
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
